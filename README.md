@@ -2,18 +2,18 @@
 A one stop tool for annotating protein files using multiple hmm databases.
 
 ## Dependencies
-- HMMER3 (3.3.2)
-- Python (3.9.12)
-- Python packages (Bio=1.76,pandas=2.0)
+1. HMMER3 (3.3.2)
+2. Python (3.9.12)
+3. Python packages (Bio=1.76,pandas=2.0)
 
 ## Installation
 All you need to do is clone this repository. Pretty easy
 
 ### Setting up Databases
 For all your databases you are going to have to first download the hmm files. Below are just some of these databases
--[Pfam](https://www.ebi.ac.uk/interpro/download/Pfam/)
--[VOG](https://vogdb.org/download)
--[GVDB](https://faylward.github.io/GVDB/)
+1. [Pfam](https://www.ebi.ac.uk/interpro/download/Pfam/)
+2. [VOG](https://vogdb.org/download)
+3. [GVDB](https://faylward.github.io/GVDB/)
 
 After you install an hmm database, you will need to also install a corresponding annotation csv that has annotations of the protein families in the hmm database. An example of one of these is here for pfam if you want to see what they look like. **After installing this file for each database you intend to use, change the first column header to be "id" as it will not work without this change.**
 
