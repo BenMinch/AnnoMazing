@@ -1,6 +1,6 @@
 # AnnoMazing
 A one stop tool for annotating protein files using multiple hmm databases.
-
+![alt text](https://github.com/BenMinch/AnnoMazing/blob/main/images/AnnoMazing.png)
 ## Dependencies
 1. HMMER3 (3.3.2)
 2. Python (3.9.12)
