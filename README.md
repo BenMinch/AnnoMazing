@@ -24,15 +24,15 @@ Before using your databases for the first time, you will have to index them with
 `python AnnoMazing.py -i [protein_file] -o [output_name] -db database1,database2 -annot annotation1,annotation2`
 
 **Flags**
--i: input fasta file with protein sequences
--o: name of output file, can be anything
--db: a comma separated list (no spaces) of all the databases you want to use
--annot: a comma separated list (no spaces) of all the annotation files you want to use. Must be in same order as the database list.
+1. -i: input fasta file with protein sequences
+2. -o: name of output file, can be anything
+3. -db: a comma-separated list (no spaces) of all the databases you want to use
+4. -annot: a comma-separated list (no spaces) of all the annotation files you want to use. Must be in same order as the database list.
 
 ### Outputs
 The output is a single csv file named [outname]_final.csv. This file will have all of your annotations for all of your proteins in it. An example output file is given here. 
 
-# Copywrite
+# Copyright
 AnnoMazing Copyright (C) 2023 Benjamin Minch
 
 This program is free software: you can redistribute it and/or modify it under the terms of the MIT License.
