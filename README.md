@@ -31,3 +31,10 @@ Before using your databases for the first time, you will have to index them with
 
 ### Outputs
 The output is a single csv file named [outname]_final.csv. This file will have all of your annotations for all of your proteins in it. An example output file is given here. 
+
+# Copywrite
+AnnoMazing Copyright (C) 2023 Benjamin Minch
+
+This program is free software: you can redistribute it and/or modify it under the terms of the MIT License.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the MIT License for more details.
