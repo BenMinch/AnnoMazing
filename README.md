@@ -14,6 +14,7 @@ For all your databases you are going to have to first download the hmm files. Be
 1. [Pfam](https://www.ebi.ac.uk/interpro/download/Pfam/)
 2. [VOG](https://vogdb.org/download)
 3. [GVDB](https://faylward.github.io/GVDB/)
+4. [KoFAM](https://www.genome.jp/ftp/db/kofam/)
 
 After you install an hmm database, you will need to also install a corresponding annotation csv that has annotations of the protein families in the hmm database. An example of some of these is here for pfam,VOG, and GVDB if you want to see what they look like. **After installing this file for each database you intend to use, change the first column header to be "id" as it will not work without this change.**
 
