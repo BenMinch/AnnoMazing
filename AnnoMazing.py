@@ -29,8 +29,9 @@ if number_of_databases != number_of_annotation:
 #Do Hmmscan for databases
 for i in range(0,number_of_databases):
     database1=databases[i]
+    hi= str(i)
     print('Running HMMscan for '+database1)
-    hmmscan='hmmscan -E 0.001 --tblout '+output_file+'_'+database1+'.hmmtable '+ database1+ ' '+input_file
+    hmmscan='hmmscan -E 0.00001 --cpu 12 --tblout '+output_file+'_'+hi+'.hmmtable '+ database1+ ' '+input_file
     subprocess.call(hmmscan, shell=True)
 
 #Parse best hits
@@ -63,7 +64,7 @@ for i in range(0,number_of_databases):
     annotation1=annotation[i]
     for file in os.listdir('.'):
         if file.endswith('_parsinator.tsv'):
-            if database1 in file:
+            if str(i) in file:
                 new_name=re.sub('_parsinator.tsv','_annotated.tsv', file)
                 input_df=pd.read_csv(file)
                 #determine if annotation_df is tsv or csv
@@ -89,5 +90,5 @@ merged_df.to_csv(output_file+'_final.csv',index=False)
 
 
 #Remove all the intermediate files
-remove='rm *parsed.tsv *parsinator.tsv *hmmtable'
+remove='rm *parsed.tsv *parsinator.tsv *hmmtable *annotated.tsv'
 subprocess.call(remove, shell=True)
